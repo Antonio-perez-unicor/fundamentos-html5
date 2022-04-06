@@ -1,4 +1,4 @@
-# fundamentos-html5 
-# Guillermo Andres Del Valle 
-# Roger Darío Espitia Pérez
-# Fabian Andres Muñoz Salgado
+# fundamentos-html5
+## Guillermo Andrés Del Valle
+##  Roger Darío Espitia Pérez
+# Fabián Andrés Muñoz Salgado

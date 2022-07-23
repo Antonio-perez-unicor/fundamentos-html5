@@ -83,4 +83,16 @@ const preguntas = [
 
     respuestaCorrecta: "a",  
     },
+  { 
+     
+     pregunta: "9: una fracción es un numero que representa la cantidad que tomamos de una cifra entera.",
+        respuestas: {     
+     a: "verdadero",
+     b: "falso",
+    
+    },
+
+    respuestaCorrecta: "a",  
+    },
+	
 	

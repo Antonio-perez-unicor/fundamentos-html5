@@ -53,3 +53,34 @@ const preguntas = [
     respuestaCorrecta: "c",
   },
 
+{
+    pregunta: "6:  El resultado de sumar 7/4  y 1/3 es igual  a: ",
+    respuestas: {
+       a: "un entero, un medio ",
+       b: "dos entero un medio",
+       c: "un entero, un doceavo",
+       d: "dos enteros, un doceavo"
+
+    },
+    respuestaCorrecta: "d",
+  },
+  {
+    pregunta: "7:si juan tiene 3/2  kilos de pan y se come un 1/4 de kilo. ¿Cuántos kilos de pan le quedan?",
+    respuestas: {
+       a: "3/4", 
+       b: "1/4",
+       c: "5/4",
+    },
+    respuestaCorrecta: "b",
+  },
+  {
+    pregunta: "8: si la fracción 2/3  aumenta en 2/4. ¿Que fracción resulta?",
+    respuestas: {
+      a: "4/7",
+      b: "4/12",
+      c: "7/6",
+    },
+
+    respuestaCorrecta: "a",  
+    },
+	

@@ -23,8 +23,7 @@ const preguntas = [
     },
     respuestaCorrecta: "b",
   },
-
- {
+  {
     pregunta: "3: ¿En la fracción 5/6 cuál numeron es el denominador?",
     respuestas: {
       a: "el número 5",
@@ -52,8 +51,7 @@ const preguntas = [
     },
     respuestaCorrecta: "c",
   },
-
-{
+  {
     pregunta: "6:  El resultado de sumar 7/4  y 1/3 es igual  a: ",
     respuestas: {
        a: "un entero, un medio ",
@@ -83,7 +81,8 @@ const preguntas = [
 
     respuestaCorrecta: "a",  
     },
-  { 
+    
+    { 
      
      pregunta: "9: una fracción es un numero que representa la cantidad que tomamos de una cifra entera.",
         respuestas: {     
@@ -94,7 +93,7 @@ const preguntas = [
 
     respuestaCorrecta: "a",  
     },
-	
+    
   {
   pregunta: "10:  el resultado 5/3 + 1/2 es igual a:",
       
@@ -123,16 +122,13 @@ function mostrarTest() {
               <br/></label>`
       );
     }
-	  
- preguntasYrespuestas.push(
+
+    preguntasYrespuestas.push(
       `<br/><div class="cuestion">${preguntaActual.pregunta}</div>
           <br/><div class="respuestas"> ${respuestas.join("")} </div>
           `
     );
   });
-
-  contenedor.innerHTML = preguntasYrespuestas.join("");
-}
 
   contenedor.innerHTML = preguntasYrespuestas.join("");
 }
@@ -167,4 +163,3 @@ function mostrarResultado() {
 }
 
 botonRes.addEventListener("click", mostrarResultado);
-

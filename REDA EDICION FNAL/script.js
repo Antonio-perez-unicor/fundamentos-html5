@@ -109,4 +109,19 @@ const preguntas = [
     },
 ];
 
+function mostrarTest() {
+  const preguntasYrespuestas = [];
+
+  preguntas.forEach((preguntaActual, numeroDePregunta) => {
+    const respuestas = [];
+
+    for (letraRespuesta in preguntaActual.respuestas) {
+      respuestas.push(
+        `<br/><label>
+                  <input type="radio" name="${numeroDePregunta}" value="${letraRespuesta}" />
+                  ${letraRespuesta} : ${preguntaActual.respuestas[letraRespuesta]}
+              <br/></label>`
+      );
+    }
+	  
 

@@ -124,4 +124,13 @@ function mostrarTest() {
       );
     }
 	  
+ preguntasYrespuestas.push(
+      `<br/><div class="cuestion">${preguntaActual.pregunta}</div>
+          <br/><div class="respuestas"> ${respuestas.join("")} </div>
+          `
+    );
+  });
+
+  contenedor.innerHTML = preguntasYrespuestas.join("");
+}
 

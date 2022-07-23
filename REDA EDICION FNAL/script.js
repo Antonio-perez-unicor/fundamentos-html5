@@ -95,4 +95,18 @@ const preguntas = [
     respuestaCorrecta: "a",  
     },
 	
-	
+  {
+  pregunta: "10:  el resultado 5/3 + 1/2 es igual a:",
+      
+    respuestas: {
+	a: "6/6",
+    b:"1",
+    c:"13/6",
+    d:"6/5"
+    },
+
+    respuestaCorrecta: "d",  
+    },
+];
+
+

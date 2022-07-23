@@ -134,3 +134,37 @@ function mostrarTest() {
   contenedor.innerHTML = preguntasYrespuestas.join("");
 }
 
+  contenedor.innerHTML = preguntasYrespuestas.join("");
+}
+
+mostrarTest();
+
+function mostrarResultado() {
+  const respuestas = contenedor.querySelectorAll(".respuestas");
+  let respuestasCorrectas = 0;
+
+  preguntas.forEach((preguntaActual, numeroDePregunta) => {
+    const todasLasRespuestas = respuestas[numeroDePregunta];
+    const checkboxRespuestas = `input[name='${numeroDePregunta}']:checked`;
+    const respuestaElegida = (
+      todasLasRespuestas.querySelector(checkboxRespuestas) || {}
+    ).value;
+
+    if (respuestaElegida === preguntaActual.respuestaCorrecta) {
+      respuestasCorrectas++;
+
+      respuestas[numeroDePregunta].style.color = "green";
+    } else {
+      respuestas[numeroDePregunta].style.color = "red";
+    }
+  });
+
+  resultadoTest.innerHTML =
+    "preguntas acertadas " +
+    respuestasCorrectas +
+    " de un total de " +
+    preguntas.length;
+}
+
+botonRes.addEventListener("click", mostrarResultado);
+
